@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvStopWatch"
+            android:layout_marginTop="60dp"
+            android:text="00:00:00"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    <LinearLayout
+
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <Button
+            android:background="@drawable/item"
+            android:layout_marginLeft="25dp"
+            android:id="@+id/btStartSW"
+            android:text="Start"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:background="@drawable/item"
+            android:layout_marginLeft="25dp"
+            android:id="@+id/btStopSW"
+            android:text="Stop"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:background="@drawable/item"
+            android:layout_marginLeft="25dp"
+            android:id="@+id/btResetSW"
+            android:text="Reset"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+        <Button
+            android:id="@+id/btsavelap"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/item"
+            android:layout_width="200dp"
+            android:text="Save lap"
+            android:layout_height="wrap_content"/>
+        <ListView
+            android:layout_marginTop="20dp"
+            android:id="@+id/lvSW"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</FrameLayout>

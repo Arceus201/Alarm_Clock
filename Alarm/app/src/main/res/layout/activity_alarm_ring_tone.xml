@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Setting.AlarmRingToneActivity">
+
+
+    <LinearLayout
+        android:weightSum="6"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="50dp">
+        <ImageButton
+            android:id="@+id/st_rt_CanCel"
+            android:layout_weight="1"
+            android:layout_width="50dp"
+            android:src="@drawable/ic_cancel"
+            android:layout_height="50dp"/>
+        <TextView
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text="Alarm ringtone"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+        <ImageButton
+            android:id="@+id/st_rt_Add"
+            android:layout_weight="1"
+            android:layout_width="50dp"
+            android:src="@drawable/ic_check"
+            android:layout_height="50dp"/>
+    </LinearLayout>
+
+
+    <RadioGroup
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_marginTop="10dp"
+            android:id="@+id/st_ringtone1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="RingTone1"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:layout_marginTop="10dp"
+            android:id="@+id/st_ringtone2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RingTone2"
+            android:textSize="20dp" />
+        <RadioButton
+            android:layout_marginTop="10dp"
+            android:id="@+id/st_ringtone3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RingTone3"
+            android:textSize="20dp" />
+        <RadioButton
+            android:layout_marginTop="10dp"
+            android:id="@+id/st_ringtone4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RingTone4"
+            android:textSize="20dp" />
+        <RadioButton
+            android:layout_marginTop="10dp"
+            android:id="@+id/st_ringtone5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RingTone5"
+            android:textSize="20dp" />
+    </RadioGroup>
+
+</LinearLayout>

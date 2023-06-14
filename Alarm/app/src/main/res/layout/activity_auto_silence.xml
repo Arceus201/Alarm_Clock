@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Setting.AutoSilenceActivity">
+    <LinearLayout
+        android:weightSum="6"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="50dp">
+        <ImageButton
+            android:id="@+id/st_as_CanCel"
+            android:layout_weight="1"
+            android:layout_width="50dp"
+            android:src="@drawable/ic_cancel"
+            android:layout_height="50dp"/>
+        <TextView
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text="Auto-silence"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+        <ImageButton
+            android:id="@+id/st_as_Add"
+            android:layout_weight="1"
+            android:layout_width="50dp"
+            android:src="@drawable/ic_check"
+            android:layout_height="50dp"/>
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_marginTop="10dp"
+            android:id="@+id/as_never"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Never"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:layout_marginTop="10dp"
+            android:id="@+id/as_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1 minute"
+            android:textSize="20dp" />
+        <RadioButton
+            android:layout_marginTop="10dp"
+            android:id="@+id/as_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5 minutes"
+            android:textSize="20dp" />
+        <RadioButton
+            android:layout_marginTop="10dp"
+            android:id="@+id/as_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="10 minutes"
+            android:textSize="20dp" />
+        <RadioButton
+            android:layout_marginTop="10dp"
+            android:id="@+id/as_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="15 minutes"
+            android:textSize="20dp" />
+        <RadioButton
+            android:layout_marginTop="10dp"
+            android:id="@+id/as_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="20 minutes"
+            android:textSize="20dp" />
+        <RadioButton
+            android:layout_marginTop="10dp"
+            android:id="@+id/as_6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="25 minutes"
+            android:textSize="20dp" />
+        <RadioButton
+            android:layout_marginTop="10dp"
+            android:id="@+id/as_7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="30 minutes"
+            android:textSize="20dp" />
+    </RadioGroup>
+
+</LinearLayout>
